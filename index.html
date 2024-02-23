@@ -3,12 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Styles -->
     <link rel="stylesheet" href="./src/output.css">
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/37ea7adc84.js" crossorigin="anonymous"></script>
     <title>dummy project</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+<body class="font-inter">
+    <header class="max-w-[1475px] mx-auto">
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>申請貸款 Loan Apply</a></li>
+
+                  <li><a>貸款計算機 Loan calculator</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl text-[#12372A]">HASS Capital Limited</a>
+            </div>
+            <div class="navbar-center hidden lg:flex justify-between">
+              <ul class="menu menu-horizontal justify-around px-1">
+                <li><a class="px-4 py-2 border-none hover:bg-feldgrau hover:text-white text-lg font-bold rounded-full">申請貸款 Loan Apply</a></li>
+                <li><a class="px-4 py-2 border-none hover:bg-feldgrau hover:text-white text-lg font-bold rounded-full">貸款計算機 Loan calculator</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-5">
+              <a class="px-4 py-2 border-none active:bg-feldgrau active:text-white text-lg font-bold rounded-full">登入 Log in</a>
+              <a class="px-4 py-2 border-none active:bg-feldgrau    active:text-white text-lg font-bold rounded-full">登記 Register</a>
+            </div>
+          </div>
+    </header>
+
+    <main class="max-w-[1475px] mx-auto">
+        <div class="flex min-h-min gap-4">
+            <div class="flex flex-col p-4 bg-ghostWhite space-y-4 max-w-72 h-full max-h-dvh w-1/4 ">
+                <div>
+                    <h2 class="text-feldgrau text-lg font-bold">貸款申請 Loan Application</h2>
+                </div>
+                <div class="flex flex-col">
+                  
+                    <div class="flex ">
+                        <div class="flex flex-col items-center">
+                            <div><p class="rounded-full bg-feldgrau text-white w-[26px] h-[26px] text-center">1</p></div>
+                            <div class="h-[33px] w-px bg-feldgrau"></div>
+                        </div>
+                        <div><p class="text-feldgrau font-medium">個人資料 Personal information</p></div>
+                    </div>
+                    <div class="flex ">
+                        <div class="flex flex-col items-center">
+                            <div><p class="rounded-full bg-laurelGreen text-white w-[26px] h-[26px] text-center">2</p></div>
+                            <div class="h-[33px] w-px bg-laurelGreen"></div>
+                        </div>
+                        <div><p class="text-laurelGreen font-medium">個人資料 Personal information</p></div>
+                    </div>
+                    <div class="flex ">
+                        <div class="flex flex-col items-center">
+                            <div><p class="rounded-full bg-laurelGreen text-white w-[26px] h-[26px] text-center">3</p></div>
+                            <div class="h-[33px] w-px bg-laurelGreen"></div>
+                        </div>
+                        <div><p class="text-laurelGreen font-medium">個人資料 Personal information</p></div>
+                    </div>
+                    <div class="flex ">
+                        <div class="flex flex-col items-center">
+                            <div><p class="rounded-full bg-laurelGreen text-white w-[26px] h-[26px] text-center">4</p></div>
+                            <!-- <div class="h-[33px] w-px bg-laurelGreen"></div> -->
+                        </div>
+                        <div><p class="text-laurelGreen font-medium">個人資料 Personal information</p></div>
+                    </div>
+                  
+
+                </div>
+                <div class="py-60">
+                    <h2 class="text-feldgrau text-sm font-bold">注意 Note:</h2>
+                    <h2 class="text-feldgrau text-sm font-bold">提交申請後您仍然可以編輯您的信息</h2>
+                    <p class="text-feldgrau text-sm font-normal">You can review and edit your information before submitting your application</p>
+                </div>
+               
+            </div>
+            <div id="personalInfo" class="w-3/4">
+                <div class="flex justify-between">
+                    <div><a href=""><i class="fa-solid fa-angle-left"></i> Back</a></div>
+                    <div><h2 class="text-feldgrau font-bold text-center text-xl">個人資料 Personal information</h2></div>
+                    <div></div>
+                </div>
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">中文姓名 Name in Chinese</span>
+                            </div>
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-md bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">英文姓名 Name in English</span>
+                            </div>
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-ms bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">出生日期 Date of birth</span>
+                            </div>
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-md bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">身分證類型 ID type</span>
+                            </div>
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-md bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">證件號碼 ID number</span>
+                            </div>
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-md bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">聯絡號碼 Contact</span>
+                            </div>
+                            <div class="flex gap-2">
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none max-w-16 bg-antiFlashWhite">
+                                <option   selected >+852</option>
+                                <option >+852</option>
+                                <option >+852</option>
+                            </select> 
+                            <input type="text" placeholder="王興源" class="input py-1 px-4 h-9 rounded w-full border-none max-w-sm bg-antiFlashWhite" />
+                        </div>
+                        </label>
+                    </div>
+                    <div class="col-span-6">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">電郵 Email</span>
+                            </div>
+                            <input type="text" placeholder="wonghingyuan95516@gmail.com" class="input py-1 px-4 h-9 rounded w-full border-none  bg-antiFlashWhite" />
+                        </label>
+                    </div>
+
+                    <div class="col-span-6">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">居住地址 Residential address</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                            <input type="text" placeholder="17/F, Block b, Sea To Sky Building" class="input py-1 px-4 h-9 rounded w-full border-none  bg-antiFlashWhite" />
+                            <input type="text" placeholder="23 Hai Ying Street, Tseung Kwan O" class="input py-1 px-4 h-9 rounded w-full border-none  bg-antiFlashWhite" />
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none  bg-antiFlashWhite">
+                            
+                                <option   selected >新界 The New Territories</option>
+                                <option >新界 The New Territories</option>
+                                <option >新界 The New Territories</option>
+                            </select> 
+                            <input type="text" placeholder="香港 Hong Kong" class="input py-1 px-4 h-9 rounded w-full border-none  bg-antiFlashWhite" />
+                        </div>
+                        </label>
+                    </div>
+                    <div class="col-span-3">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">住宅擁有權 Residential ownership</span>
+                            </div>
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none bg-antiFlashWhite">
+                                <option   selected >個人持有/全權擁有 Sole ownership</option>
+                                <option >個人持有/全權擁有 Sole ownership</option>
+                                <option >個人持有/全權擁有 Sole ownership</option>
+                            </select> 
+                        </label>
+                    </div>
+                    <div class="col-span-3">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">住宅類型 Residential type</span>
+                            </div>
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none bg-antiFlashWhite">
+                                <option   selected >私人屋苑 Private house</option>
+                                <option >私人屋苑 Private house</option>
+                                <option >私人屋苑 Private house</option>
+                            </select> 
+                        </label>
+                    </div>
+       
+                </div>
+
+                <hr class="bg-[#ADBC9F] my-4">
+               
+                <div><h2 class="text-feldgrau font-bold text-center text-xl mx-auto my-2 ">就業詳情 Employment detail</h2></div>
+
+                <div class="grid grid-cols-6 gap-4 items-end justify-center">
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">教育程度 Education level  <span class="text-[#BDBDBD] text-base">(選填optional)</span></span>
+                            </div>
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none bg-antiFlashWhite">
+                                <option  selected >Bacherlor’s Degree</option>
+                                <option >Bacherlor’s Degree</option>
+                                <option >Bacherlor’s Degree</option>
+                            </select> 
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">僱用類型 Employment type</span>
+                            </div>
+                            <select type="text" placeholder="王興源" class="py-1 h-9 text-sm rounded w-full border-none bg-antiFlashWhite">
+                                <option  selected >Full-time</option>
+                                <option >Part-time</option>
+                                
+                            </select> 
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">公司名稱 Company name<span class="text-[#BDBDBD] text-base">(選填optional)</span></span>
+                            </div>
+                            <input type="text" placeholder="Maintenance Technician" class="input py-1 px-4 h-9 rounded w-full border-none max-w-ms bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">職位 Job title <span class="text-[#BDBDBD] text-base">(選填optional)</span></span>
+                            </div>
+                            <input type="text" placeholder="Maintenance Technician" class="input py-1 px-4 h-9 rounded w-full border-none max-w-ms bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">已僱用年期 Years of employment<span class="text-[#BDBDBD] text-base">(選填optional)</span></span>
+                            </div>
+                            <input type="text" placeholder="1" class="input py-1 px-4 h-9 rounded w-full border-none max-w-ms bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="form-control w-full max-w-md">
+                            <div class="label">
+                                <span class="text-lg font-semibold text-raisinBlack">平均月薪 Average monthly salary (HKD)</span>
+                            </div>
+                            <input type="text" placeholder="$25,014" class="input py-1 px-4 h-9 rounded w-full border-none max-w-md bg-antiFlashWhite" />
+                        </label>
+                    </div>
+                </div>
+                <div class="mx-auto text-center my-10">
+                    <button class="px-4 py-2 border-none bg-feldgrau text-white text-lg font-bold rounded-full">下一步 Next step</button>
+               
+                </div>
+                
+            </div>
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <!--  -->
 </body>
 </html>
